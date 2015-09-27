@@ -23,8 +23,9 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 
 
-
+add_theme_support( 'post-thumbnails' );
 add_theme_support( 'menus' );
+
 
 function register_theme_menus(){
     register_nav_menus(
@@ -56,6 +57,7 @@ create_widget( 'Front Page Center', 'front-center', 'Displays in the center of t
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the homepage' );
 
 create_widget('Page Sidebar', 'page', 'Displays on the side of the pages with a sidebar');
+create_widget('Blog Sidebar', 'blog', 'Displays on the side of the pages in the blog section');
 
 
 
